@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        .box{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            bottom: 0;
+            left: 0;
+            border-radius: 25px;
+            animation: Lucky1 3s linear infinite, ssLucky2 1s ease-out infinite alternate;
+        }
+        .container{
+            position: relative;
+            width: 60vw;
+            height: 50vh;
+            background-color: aqua;
+        }
+        @keyframes Lucky1 {
+            form{
+                left: 0;
+            }
+            to{
+                left: 100%;
+            }
+        }
+        @keyframes Lucky2 {
+            form{
+                bottom: 0;
+            }
+            to{
+                bottom: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
